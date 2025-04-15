@@ -17,7 +17,7 @@ const FooterDown = () => {
         </div>
       </div>
 
-      <div className='px-30'>
+      <div className='md:px-30 px-10'>
         <div className='flex gap-3 pt-30 font-jakarta text-5xl'>
           <h1 className='font-medium'>Let's</h1>
           <h1 className='font-extrabold italic text-[#021167]'>Connect</h1>
@@ -25,16 +25,36 @@ const FooterDown = () => {
         </div>
         <hr class="h-px my-8 border-2 bg-gray-700"></hr>
         
-        <div className='flex pt-10 pr-40'>
-          <div className='pr-30'>
-            <img className='pb-5' src="src\assets\Footers\LogoAlt.svg" alt="Logo Alt" />
+        <div className='md:flex pt-10 md:pr-40'>
+          <div className='md:pr-30'>
+            <img className='pb-5 md:place-self-start place-self-center' src="src\assets\Footers\LogoAlt.svg" alt="Logo Alt" />
             <p className='font-jakarta font-medium text-gray-400 text-justify'>You can easily connect with me through my social media or LinkedIn for any inquiries, collaborations, or professional networking. Whether you have questions, ideas to share, or opportunities to discuss, I’d love to connect and engage with you!</p>
 
           
           
           </div>
 
-          <div className='pr-30 font-jakarta font-medium '>
+          <div className='flex gap-4 md:py-10 pt-10 md:hidden place-content-center'>
+          <button className='cursor-pointer hover:scale-110 transition'>
+            <img src="src\assets\Footers\GITHUB.svg" alt="Github" />
+          </button>
+
+          <button className='cursor-pointer hover:scale-110 transition'>
+            <img src="src\assets\Footers\IG.svg" alt="Github" />
+          </button>
+
+          <button className='cursor-pointer hover:scale-110 transition'>
+            <img src="src\assets\Footers\IN.svg" alt="Github" />
+          </button>
+
+          <button className='cursor-pointer hover:scale-110 transition'>
+            <img src="src\assets\Footers\DC.svg" alt="Github" />
+          </button>
+        </div>
+          
+
+          <div className='pt-10 md:pt-0'>
+          <div className='md:pr-30 font-jakarta font-medium '>
             <h1 className='mb-4 text-[#0019a5]'>Navigation</h1>
             <ul className=''>
               <li className='mb-4'>
@@ -52,15 +72,16 @@ const FooterDown = () => {
             </ul>
           </div>
 
-          <div className='pr-30 font-jakarta font-medium'>
+          <div className='pr-30 font-jakarta font-medium py-10 md:py-0'>
             <h1 className='mb-4 text-[#0019a5]'>Contact</h1>
             <ul className='cursor-pointer'>
               <li className='mb-4 text-gray-400 hover:text-black transition'>chrispradayana@gmail.com</li>
             </ul>
           </div>
         </div>
+        </div>
 
-        <div className='flex gap-4 py-10'>
+        <div className='md:flex gap-4 py-10 hidden'>
           <button className='cursor-pointer hover:scale-110 transition'>
             <img src="src\assets\Footers\GITHUB.svg" alt="Github" />
           </button>
@@ -80,8 +101,8 @@ const FooterDown = () => {
         
       </div>
 
-      <div className='py-5 bg-gradient-to-r from-[#FFE100] via-[#FFB545] to-yellow-400 '>
-          <p className='px-30 font-jakarta italic'>Chris’s website no need to add copyright. All rights reserved.</p>
+      <div className='md:py-5 py-2 bg-gradient-to-r from-[#FFE100] via-[#FFB545] to-yellow-400 '>
+          <p className='md:px-30 place-self-center md:place-self-start font-jakarta italic text-[6.38px] md:text-[14px]'>Chris’s website no need to add copyright. All rights reserved.</p>
       </div>
     </div>
 

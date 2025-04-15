@@ -4,14 +4,14 @@ import SeeMore from './ButtonDownload'
 
 const StatsText = () => {
   return (
-    <div className='pl-20'>
-        <div className='flex space-x-3 text-[62px]'>
+    <div className='md:pl-20 px-10'>
+        <div className='hidden md:flex space-x-3 text-[62px]'>
             <h1 className='font-jakarta font-normal'>My</h1>
             <h1 className='font-jakarta font-black italic'>Stats</h1>
         </div>
         <p className='py-3 text-[20px] font-jakarta font-normal text-[#00009B]'>From leading committees to completing projects, I’ve built a strong foundation in teamwork, development, and leadership. I’m all about creating meaningful solutions and driving innovation!</p>
 
-        <div className='flex'>
+        <div className='md:flex'>
           <div className='text-[#00009B] flex-auto'>
             <p className='text-[70px] font-black font-jakarta text-[#00009B]'>
               <CountUp
@@ -63,7 +63,7 @@ const StatsText = () => {
             </p>
           </div>
         </div>
-        <button className='pt-9'> 
+        <button className='pt-9 pl-20 md:pl-0'> 
           <SeeMore/>    
         </button>
     

@@ -16,12 +16,12 @@ const AnimatedIntro = () => {
     <p 
       className={`
         text-justify
-        mt-15
-        pr-10 
         font-jakarta 
-        font-medium
+        font-medium 
+        mt-15
+        md:pr-10 
         text-[20px]
-        mr-100
+        md:mr-100
         transition-all 
         duration-1000 
         ease-out

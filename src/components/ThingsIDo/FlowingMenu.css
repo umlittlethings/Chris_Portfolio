@@ -111,3 +111,13 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 768px) {
+  .menu__item-link {
+    font-size: 2.5vh; /* Ukuran lebih kecil di mobile */
+  }
+
+  .marquee span {
+    font-size: 2.5vh; /* Ukuran lebih kecil di mobile */
+  }
+}

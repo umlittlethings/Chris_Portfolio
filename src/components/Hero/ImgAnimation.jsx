@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const ImgAnimation = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  
+
   useEffect(() => {
     setIsLoaded(true);
   }, []);
@@ -17,19 +17,25 @@ const ImgAnimation = () => {
           <div className="wave wave3"></div>
         </div>
       </div>
-      
-      {/* Hero image with animation */}
-      <img 
-        className={`relative z-10 m-auto transform transition-all duration-1000 ease-out
-          ${isLoaded ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}
-          hover:scale-105 transition-transform duration-700
-          animate-float`}
-        src="src/assets/Hero Image.svg" 
-        alt="Hero" 
-        onLoad={() => setIsLoaded(true)}
-      />
-      
-      {/* CSS for the waves - you'll need to include this in your global CSS file */}
+
+      {/* Responsive Image with animation */}
+      <picture>
+        <source
+          media="(max-width: 768px)"
+          srcSet="src/assets/Mobile/Landing/Landing-Mobile.svg"
+        />
+        <img
+          className={`relative z-10 m-auto transform transition-all duration-1000 ease-out
+            ${isLoaded ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}
+            hover:scale-105 transition-transform duration-700
+            animate-float`}
+          src="src/assets/Hero Image.svg"
+          alt="Hero"
+          onLoad={() => setIsLoaded(true)}
+        />
+      </picture>
+
+      {/* CSS for the waves */}
       <style jsx>{`
         .wave-container {
           position: absolute;
@@ -37,7 +43,7 @@ const ImgAnimation = () => {
           height: 100%;
           overflow: hidden;
         }
-        
+
         .wave {
           position: absolute;
           bottom: 0;
@@ -49,14 +55,14 @@ const ImgAnimation = () => {
           animation: wave-animation 25s linear infinite;
           z-index: 1;
         }
-        
+
         .wave1 {
           opacity: 0.2;
           background-color: rgba(2, 17, 103, 0.1);
           animation-delay: 0s;
           bottom: 0;
         }
-        
+
         .wave2 {
           opacity: 0.15;
           background-color: rgba(2, 30, 144, 0.15);
@@ -64,7 +70,7 @@ const ImgAnimation = () => {
           animation-duration: 20s;
           bottom: 10px;
         }
-        
+
         .wave3 {
           opacity: 0.1;
           background-color: rgba(4, 34, 205, 0.1);
@@ -72,7 +78,7 @@ const ImgAnimation = () => {
           animation-duration: 15s;
           bottom: 15px;
         }
-        
+
         @keyframes wave-animation {
           0% {
             transform: translateX(0);
@@ -81,7 +87,7 @@ const ImgAnimation = () => {
             transform: translateX(-50%);
           }
         }
-        
+
         @keyframes float {
           0%, 100% {
             transform: translateY(0);
@@ -90,7 +96,7 @@ const ImgAnimation = () => {
             transform: translateY(-10px);
           }
         }
-        
+
         .animate-float {
           animation: float 3s ease-in-out infinite;
         }

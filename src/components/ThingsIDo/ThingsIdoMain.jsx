@@ -12,16 +12,20 @@ const ThingsIdoMain = () => {
   return (
     <div className='container place-content-center'>
       <br />
-      <div className='flex gap-3 py-10 px-30'>
+      <div className='flex gap-3 py-10 md:px-30 px-10 place-self-center md:place-self-start'>
         <h1 className='font-jakarta font-medium italic text-3xl '>Things</h1>
-        <h1 className='font-jakarta font-black text-3xl  pr-220'>I do</h1>
-        <button className=''>
+        <h1 className='font-jakarta font-black text-3xl md:pr-220 '>I do</h1>
+        <button className='hidden md:block'>
           <SeeMore/>
         </button>
       </div>
-        <div className='container px-30 mx-auto' style={{ height: '600px', position: 'relative' }}>
+        <div className='container md:px-30 px-10 mx-auto' style={{ height: '600px', position: 'relative' }}>
             <FlowingMenu items={demoItems} />
         </div>
+
+        <button className='block md:hidden place-self-center mt-5'>
+          <SeeMore/>
+        </button>
     </div>
   )
 }

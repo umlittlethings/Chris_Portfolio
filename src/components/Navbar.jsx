@@ -44,8 +44,8 @@ const Navbar = () => {
 
   return (
     <nav className={`transition-all duration-300 z-50 bg-gradient-to-r from-[#021167] via-[#021E90] to-[#0422CD] 
-      ${isScrolled ? 'sticky top-2 shadow-lg' : 'relative'} 
-      ${isMobile ? 'w-full' : isScrolled ? 'mx-3 my-0 rounded-2xl' : 'w-full rounded-none'}
+      ${isScrolled ? 'sticky top-2 shadow-lg rounded-xl' : 'relative'} 
+      ${isMobile ? (isScrolled ? 'mx-2' : 'mx-0') : isScrolled ? 'mx-3 my-0 rounded-2xl' : 'w-full rounded-none'}
       py-2 px-4 text-black font-semibold`}>
       <div className='flex justify-between items-center'>
         <div className={isMobile ? 'pl-0 ml-0' : 'pl-2'}>

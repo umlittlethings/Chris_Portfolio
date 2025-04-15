@@ -35,13 +35,13 @@ const ExpertiseMain = () => {
   return (
     <div className="container" ref={componentRef}>
       <div 
-        className={`grid grid-flow-col my-10 mx-30 transition-all duration-1000 ease-out
+        className={`grid md:grid-flow-col my-10 md:mx-30 transition-all duration-1000 ease-out
           ${isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}
       >
         <div className={`transition-all duration-1000 delay-100 ${isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
           <Expertise />
         </div>
-        <div className="grid grid-flow-row mx-5">
+        <div className="grid grid-flow-row mx-5 pt-10 md:pt-0">
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'scale-100 opacity-100' : 'scale-90 opacity-0'}`}>
             <Education />
           </div>

@@ -4,7 +4,7 @@ const Card4 = () => {
   return (
     <div className='container bg-linear-to-t from-[#4545FF] to-[#021678] rounded-3xl w-fit h-fit place-items-center hover:scale-105 duration-300 ease-in-out cursor-pointer'>
         <div className='m-5'>
-        <img className="h-160 w-150" src="src\assets\Card Components\photo4.svg" alt="" />
+        <img className="md:h-160 w-150 h-full" src="src\assets\Card Components\photo4.svg" alt="" />
         <div>
             <div className='flex my-2'>
                 <div className='rounded-full bg-[#0EF7EB] px-7 font-medium font-jakarta mr-4'>Done</div> 
