@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ButtonContact from './ButtonContact';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -49,6 +50,7 @@ const Navbar = () => {
       py-2 px-4 text-black font-semibold`}>
       <div className='flex justify-between items-center'>
         <div className={isMobile ? 'pl-0 ml-0' : 'pl-2'}>
+        <Link to="/">
           <img 
             className={`py-1 ${
               isMobile ? 'scale-60 max-h-10 -ml-2' : 'scale-80 max-h-16'
@@ -56,14 +58,27 @@ const Navbar = () => {
             src="src/assets/Logo.svg" 
             alt="Logo" 
           />
+          </Link>
         </div>
         
         {/* Desktop Navigation */}
         <ul className='hidden md:flex space-x-6 lg:space-x-20 p-2 font-jakarta'>
-          <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>HOME</li>
+          <Link to="/">
+            <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>HOME</li>
+          </Link>
+          
           <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>SERVICES</li>
-          <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>PROJECTS</li>
-          <li className='py-1'><ButtonContact/></li>
+          
+          <Link to="/ComingSoon">
+            <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>PROJECTS</li>
+          </Link>
+          
+          
+          <Link to="/About">
+            <ButtonContact/>
+          </Link>
+          
+
         </ul>
         
         {/* Mobile Burger Button */}
