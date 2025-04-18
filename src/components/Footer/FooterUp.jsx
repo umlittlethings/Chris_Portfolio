@@ -1,6 +1,7 @@
 import React from 'react'
 import InfiniteScrollOrange from '../InfiniteScroll/InfiniteScrollOrange'
 import ContactMe from './ContactMe'
+import { Link } from 'react-router-dom'
 
 const FooterUp = () => {
   return (
@@ -21,7 +22,9 @@ const FooterUp = () => {
                     <h1 className='font-jakarta font-extrabold text-[#AC3472] md:text-3xl text-2xl'>something awesome</h1>
                 </div>
                 <h1 className='font-jakarta font-medium text-[#935900] md:text-3xl text-2xl'>to life together!</h1>
-                <button className='pt-10'><ContactMe/></button>
+                <Link to='/About'>
+                    <button className='pt-10'><ContactMe/></button>
+                </Link>
             </div>
 
             <div className='hidden md:block'>

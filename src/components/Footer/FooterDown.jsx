@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const FooterDown = () => {
   const items = ["App Development", "UI/UX", "Design", "Website Development"];
@@ -57,24 +58,32 @@ const FooterDown = () => {
           <div className='md:pr-30 font-jakarta font-medium '>
             <h1 className='mb-4 text-[#0019a5]'>Navigation</h1>
             <ul className=''>
-              <li className='mb-4'>
-                <button className='cursor-pointer text-gray-400 hover:text-black transition'>Home</button>
-              </li>
-              <li className='mb-4'>
-                <button className='cursor-pointer text-gray-400 hover:text-black transition'>Services</button>
-              </li>
-              <li className='mb-4'>
-                <button className='cursor-pointer text-gray-400 hover:text-black transition'>Projects</button>
-              </li>
-              <li className='mb-4'>
-                <button className='cursor-pointer text-gray-400 hover:text-black transition'>Contact</button>
-              </li>
+            <li className='mb-4'>
+  <Link to='/' className='cursor-pointer text-gray-400 hover:text-black transition'>
+    Home
+  </Link>
+</li>
+<li className='mb-4'>
+  <Link to='/Services' className='cursor-pointer text-gray-400 hover:text-black transition'>
+    Services
+  </Link>
+</li>
+<li className='mb-4'>
+  <Link to='/ComingSoon' className='cursor-pointer text-gray-400 hover:text-black transition'>
+    Projects
+  </Link>
+</li>
+<li className='mb-4'>
+  <Link to='/About' className='cursor-pointer text-gray-400 hover:text-black transition'>
+    Contact
+  </Link>
+</li>
             </ul>
           </div>
 
           <div className='pr-30 font-jakarta font-medium py-10 md:py-0'>
             <h1 className='mb-4 text-[#0019a5]'>Contact</h1>
-            <ul className='cursor-pointer'>
+            <ul className=''>
               <li className='mb-4 text-gray-400 hover:text-black transition'>chrispradayana@gmail.com</li>
             </ul>
           </div>
@@ -82,21 +91,41 @@ const FooterDown = () => {
         </div>
 
         <div className='md:flex gap-4 py-10 hidden'>
-          <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\GITHUB.svg" alt="Github" />
-          </button>
+        <a
+  href="https://github.com/umlittlethings"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cursor-pointer hover:scale-110 transition"
+>
+  <img src="src/assets/Footers/GITHUB.svg" alt="Github" />
+</a>
 
-          <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\IG.svg" alt="Github" />
-          </button>
+<a
+  href="https://www.instagram.com/wchrispradayana"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cursor-pointer hover:scale-110 transition"
+>
+  <img src="src/assets/Footers/IG.svg" alt="Instagram" />
+</a>
 
-          <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\IN.svg" alt="Github" />
-          </button>
+<a
+  href="https://www.linkedin.com/in/chrispradayana/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cursor-pointer hover:scale-110 transition"
+>
+  <img src="src/assets/Footers/IN.svg" alt="LinkedIn" />
+</a>
 
-          <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\DC.svg" alt="Github" />
-          </button>
+<a
+  href="https://discord.com/users/604938815030689794"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cursor-pointer hover:scale-110 transition"
+>
+  <img src="src/assets/Footers/DC.svg" alt="Discord" />
+</a>
         </div>
         
       </div>

@@ -12,7 +12,6 @@ function Home() {
 
   return (
     <>
-    <Navbar/>
     <HeroMain></HeroMain>
     <br />
     <IntroMain/>
@@ -23,7 +22,6 @@ function Home() {
     <StatsMain/>
     <ExpertiseMain/>
     <IsiMain/>
-    <FooterMain/>
     </>
     
   )

@@ -63,9 +63,14 @@ const StatsText = () => {
             </p>
           </div>
         </div>
-        <button className='pt-9 pl-20 md:pl-0'> 
-          <SeeMore/>    
-        </button>
+        <a 
+           
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="pt-9 pl-20 md:pl-0 block"
+        >
+        <SeeMore />
+        </a>
     
     </div>
     

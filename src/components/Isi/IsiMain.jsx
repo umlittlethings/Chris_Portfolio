@@ -4,6 +4,7 @@ import SeeMoreProj from './SeeMoreProj'
 import Card2 from './Card2'
 import Card3 from './Card3'
 import Card4 from './Card4'
+import { Link } from 'react-router-dom'
 
 const IsiMain = () => {
   return (
@@ -23,21 +24,38 @@ const IsiMain = () => {
           <h1 className='font-jakarta font-medium italic text-5xl'>-My</h1>
           <h1 className='font-jakarta font-black text-5xl md:pr-180'>Portfolio</h1>
           <button className='md:block hidden'>
-            <SeeMoreProj/>
+            <Link to='/ComingSoon'>
+              <SeeMoreProj/>
+            </Link>
+            
           </button> 
         </div>
 
         {/* Cards */}
         <div className="relative z-10 md:grid flex flex-col md:grid-cols-2 place-items-center md:px-15 gap-4 px-5">
-          <Card1/>
-          <Card2/>
-          <Card3/>
-          <Card4/>
+          
+        <Link to="/ComingSoon">
+          <Card1 />
+        </Link>
+
+        <Link to="/ComingSoon">
+          <Card2 />
+        </Link>
+
+        <Link to="/ComingSoon">
+          <Card3 />
+        </Link>
+
+        <Link to="/ComingSoon">
+          <Card4 />
+        </Link>
         </div>
 
         {/* Mobile Button */}
         <div className="z-10 relative flex justify-center py-6 md:hidden">
-          <SeeMoreProj/>
+        <Link to='/ComingSoon'>
+              <SeeMoreProj/>
+            </Link>
         </div>
       </div>
     </div>

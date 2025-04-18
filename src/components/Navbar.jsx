@@ -1,17 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import ButtonContact from './ButtonContact';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom'; // ⬅️ tambahkan useLocation
+
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation(); // ⬅️ lokasi routing sekarang
 
+
+  useEffect(() => {
+    setNav(false);
+  }, [location.pathname]);
+  
   // Toggle navigation menu
   const handleNav = () => {
     setNav(!nav);
-  };
+  }; 
 
   // Check if screen size is mobile
   useEffect(() => {
@@ -67,7 +74,9 @@ const Navbar = () => {
             <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>HOME</li>
           </Link>
           
-          <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>SERVICES</li>
+          <Link to="/Services">
+            <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>SERVICES</li>
+          </Link>
           
           <Link to="/ComingSoon">
             <li className='py-2 md:py-3 lg:py-4 text-white text-sm md:text-base lg:text-[20.67px]'>PROJECTS</li>
@@ -92,10 +101,20 @@ const Navbar = () => {
           : 'fixed md:hidden top-[-100%] left-0 right-0 bottom-0 flex flex-col justify-center items-center w-full h-screen bg-gradient-to-r from-[#021167] via-[#021E90] to-[#0422CD] text-center ease-in duration-300 z-40'
         }>
           <ul className='p-4 font-jakarta'>
-            <li className='py-4 text-white text-xl sm:text-2xl'>HOME</li>
-            <li className='py-4 text-white text-xl sm:text-2xl'>SERVICES</li>
-            <li className='py-4 text-white text-xl sm:text-2xl'>PROJECTS</li>
-            <li className='py-4'><ButtonContact/></li>
+          <li className="py-4 text-white text-xl sm:text-2xl">
+    <Link to="/">HOME</Link>
+  </li>
+  <li className="py-4 text-white text-xl sm:text-2xl">
+    <Link to="/Services">SERVICES</Link>
+  </li>
+  <li className="py-4 text-white text-xl sm:text-2xl">
+    <Link to="/ComingSoon">PROJECTS</Link>
+  </li>
+  <li className="py-4">
+    <Link to="/About">
+      <ButtonContact />
+    </Link>
+  </li>
           </ul>
         </div>
       </div>
