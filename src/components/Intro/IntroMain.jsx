@@ -33,12 +33,12 @@ const IntroMain = () => {
             <div className=" relative flex justify-center items-center md:pr-50  pt-10">
                 <img 
                     className="absolute z-10 transform scale:100 md:scale-230 -translate-x-8 invisible md:visible" 
-                    src="/src/assets/Element1.svg" 
+                    src="Element1.svg" 
                     alt="Background Element" 
                 />
                 <img 
                     className="relative z-20 scale:300 md:scale-400 rotate-1" 
-                    src="/src/assets/Photo.svg" 
+                    src="Photo.svg" 
                     alt="Photo" 
                 />
             </div>

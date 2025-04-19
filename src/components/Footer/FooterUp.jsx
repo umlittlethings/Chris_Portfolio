@@ -12,23 +12,23 @@ const FooterUp = () => {
             <div className='flex place-content-center py-10'>
 
             <div className='hidden md:block'>
-                <img src="src\assets\Footers\Asterisk 2.svg" alt="" />
+                <img src="Footers\Asterisk 2.svg" alt="" />
             </div>
 
             <div className='place-items-center md:px-80'>
                 <h1 className='font-jakarta font-extrabold md:text-6xl text-3xl italic text-[#021678]'>Interested?</h1>
                 <div className='flex space-x-2 my-2'>
-                    <h1 className='font-jakarta font-medium text-[#935900] md:text-3xl text-2xl'>Let's bring </h1>
-                    <h1 className='font-jakarta font-extrabold text-[#AC3472] md:text-3xl text-2xl'>something awesome</h1>
+                    <h1 className='font-jakarta font-medium text-[#935900] md:text-3xl text-xl'>Let's bring </h1>
+                    <h1 className='font-jakarta font-extrabold text-[#AC3472] md:text-3xl text-xl'>something awesome</h1>
                 </div>
-                <h1 className='font-jakarta font-medium text-[#935900] md:text-3xl text-2xl'>to life together!</h1>
+                <h1 className='font-jakarta font-medium text-[#935900] md:text-3xl text-xl'>to life together!</h1>
                 <Link to='/About'>
                     <button className='pt-10'><ContactMe/></button>
                 </Link>
             </div>
 
             <div className='hidden md:block'>
-                <img src="src\assets\Footers\Dawn.svg" alt="" />
+                <img src="Footers\Dawn.svg" alt="" />
             </div>
 
         </div>

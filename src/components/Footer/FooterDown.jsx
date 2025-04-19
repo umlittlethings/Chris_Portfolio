@@ -10,7 +10,7 @@ const FooterDown = () => {
           {[...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items,].map((item, index) => (
             <div key={index} className=" text-white text-xl flex items-center gap-10 font-jakarta font-extrabold">
               {item}
-              <img src="src/assets/Asterisk Orange.svg" alt="Asterisk" className="w-10 h-5" />
+              <img src="Asterisk Orange.svg" alt="Asterisk" className="w-10 h-5" />
             </div>
           
           
@@ -28,7 +28,7 @@ const FooterDown = () => {
         
         <div className='md:flex pt-10 md:pr-40'>
           <div className='md:pr-30'>
-            <img className='pb-5 md:place-self-start place-self-center' src="src\assets\Footers\LogoAlt.svg" alt="Logo Alt" />
+            <img className='pb-5 md:place-self-start place-self-center' src="Footers\LogoAlt.svg" alt="Logo Alt" />
             <p className='font-jakarta font-medium text-gray-400 text-justify'>You can easily connect with me through my social media or LinkedIn for any inquiries, collaborations, or professional networking. Whether you have questions, ideas to share, or opportunities to discuss, I’d love to connect and engage with you!</p>
 
           
@@ -37,19 +37,19 @@ const FooterDown = () => {
 
           <div className='flex gap-4 md:py-10 pt-10 md:hidden place-content-center'>
           <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\GITHUB.svg" alt="Github" />
+            <img src="Footers\GITHUB.svg" alt="Github" />
           </button>
 
           <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\IG.svg" alt="Github" />
+            <img src="Footers\IG.svg" alt="Github" />
           </button>
 
           <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\IN.svg" alt="Github" />
+            <img src="Footers\IN.svg" alt="Github" />
           </button>
 
           <button className='cursor-pointer hover:scale-110 transition'>
-            <img src="src\assets\Footers\DC.svg" alt="Github" />
+            <img src="Footers\DC.svg" alt="Github" />
           </button>
         </div>
           
@@ -97,7 +97,7 @@ const FooterDown = () => {
   rel="noopener noreferrer"
   className="cursor-pointer hover:scale-110 transition"
 >
-  <img src="src/assets/Footers/GITHUB.svg" alt="Github" />
+  <img src="Footers/GITHUB.svg" alt="Github" />
 </a>
 
 <a
@@ -106,7 +106,7 @@ const FooterDown = () => {
   rel="noopener noreferrer"
   className="cursor-pointer hover:scale-110 transition"
 >
-  <img src="src/assets/Footers/IG.svg" alt="Instagram" />
+  <img src="Footers/IG.svg" alt="Instagram" />
 </a>
 
 <a
@@ -115,7 +115,7 @@ const FooterDown = () => {
   rel="noopener noreferrer"
   className="cursor-pointer hover:scale-110 transition"
 >
-  <img src="src/assets/Footers/IN.svg" alt="LinkedIn" />
+  <img src="Footers/IN.svg" alt="LinkedIn" />
 </a>
 
 <a
@@ -124,7 +124,7 @@ const FooterDown = () => {
   rel="noopener noreferrer"
   className="cursor-pointer hover:scale-110 transition"
 >
-  <img src="src/assets/Footers/DC.svg" alt="Discord" />
+  <img src="Footers/DC.svg" alt="Discord" />
 </a>
         </div>
         

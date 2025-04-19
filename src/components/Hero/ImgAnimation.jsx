@@ -22,7 +22,7 @@ const ImgAnimation = () => {
       <picture>
         <source
           media="(max-width: 768px)"
-          srcSet="src/assets/Mobile/Landing/Landing-Mobile.svg"
+          srcSet="Mobile/Landing/Landing-Mobile.svg"
         />
         <img
           className={`relative z-10 m-auto transform transition-all duration-1000 ease-out

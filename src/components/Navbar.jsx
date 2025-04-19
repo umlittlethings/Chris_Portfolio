@@ -62,7 +62,7 @@ const Navbar = () => {
             className={`py-1 ${
               isMobile ? 'scale-60 max-h-10 -ml-2' : 'scale-80 max-h-16'
             }`} 
-            src="src/assets/Logo.svg" 
+            src="Logo.svg" 
             alt="Logo" 
           />
           </Link>

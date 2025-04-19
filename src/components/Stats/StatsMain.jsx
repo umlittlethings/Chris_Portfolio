@@ -11,7 +11,7 @@ const StatsMain = () => {
             <h1 className='font-jakarta font-black italic'>Stats</h1>
         </div>
             <div className='px-10 place-content-center md:scale-170'>
-                <img src="src/assets/Group 64.svg" alt="" />
+                <img src="Group 64.svg" alt="" />
             </div>
 
             <StatsText/>

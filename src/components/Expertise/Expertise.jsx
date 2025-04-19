@@ -7,8 +7,8 @@ const Expertise = () => {
   <div className='mx-2 md:mx-0 place-items-center'>
   <div className='flex space-x-4 md:space-x-8 pt-18 items-center'>
     <img 
-      src="src/assets/icon.svg" 
-      alt="" 
+      src="laptop.svg" 
+      alt="e" 
       className=" h-auto" 
     />
     <h1 className='font-jakarta font-extrabold md:text-[74px] text-[50px] text-[#021167]'>
@@ -21,8 +21,8 @@ const Expertise = () => {
     <h1 className='font-jakarta font-extrabold text-[31px] text-[#021167] pb-5'>Design</h1>
     <img 
       className="w-90 md:w-100 h-auto" 
-      src="src/assets/Frame 11.svg" 
-      alt="" 
+      src="Frame 11.svg" 
+      alt="e" 
     />
   </div>
 
@@ -35,7 +35,7 @@ const Expertise = () => {
       (Still learning for the backend)
     </p>
     <img 
-      src="src/assets/Frame 64.svg" 
+      src="Frame 64.svg" 
       alt="" 
       className="w-90 md:w-100 h-auto" 
     />

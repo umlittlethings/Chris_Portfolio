@@ -9,7 +9,7 @@ const InfiniteScrollBlue = () => {
         {[...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items,].map((item, index) => (
           <div key={index} className=" text-white text-xl flex items-center gap-10 font-jakarta font-extrabold">
             {item}
-            <img src="src/assets/Asterisk Blue.svg" alt="Asterisk" className="w-5 h-5" />
+            <img src="Asterisk Blue.svg" alt="Asterisk" className="w-5 h-5" />
           </div>
           
           

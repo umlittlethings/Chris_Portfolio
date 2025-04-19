@@ -9,7 +9,7 @@ const InfiniteScrollOrange= () => {
         {[...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items, ...items,].map((item, index) => (
           <div key={index} className=" text-white text-xl flex items-center gap-10 font-jakarta font-extrabold">
             {item}
-            <img src="src/assets/Asterisk Orange.svg" alt="Asterisk" className="w-10 h-5" />
+            <img src="Asterisk Orange.svg" alt="Asterisk" className="w-10 h-5" />
           </div>
           
           

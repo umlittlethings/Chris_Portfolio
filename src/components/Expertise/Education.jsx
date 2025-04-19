@@ -5,7 +5,7 @@ const Education = () => {
     
     <div className='container border-2 border-[#00009B] rounded-2xl bg-white p-8'>
       <div className='flex space-x-8 pt-10 pb-5'>
-        <img src="src/assets/graduation-cap-02.svg" alt="" />
+        <img src="graduation-cap-02.svg" alt="" />
         <h1 className='font-jakarta font-extrabold md:text-[50px] text-[40px] text-[#021167]'>Education</h1>
       </div>
 

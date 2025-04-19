@@ -6,7 +6,7 @@ const Scard = () => {
     <div className="max-w-sm p-6 rounded-xl bg-gradient-to-br from-[#021678] to-[#4545FF] text-white shadow-lg hover:scale-105 duration-300 ease-in-out">
       {/* Icon */}
       <div className="text-white mb-4">
-        <img className='w-8' src="src\assets\Scardsz\palette.svg" alt="" />
+        <img className='w-8' src="Scardsz\palette.svg" alt="" />
       </div>
 
       {/* Title */}

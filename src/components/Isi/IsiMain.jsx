@@ -13,7 +13,7 @@ const IsiMain = () => {
         {/* Background Image */}
         <div className="absolute inset-0 h-full -z-10">
           <img 
-            src="src/assets/bg.svg" 
+            src="bg.svg" 
             alt="Background" 
             className="w-full h-full object-cover object-center"
           />
@@ -34,21 +34,21 @@ const IsiMain = () => {
         {/* Cards */}
         <div className="relative z-10 md:grid flex flex-col md:grid-cols-2 place-items-center md:px-15 gap-4 px-5">
           
-        <Link to="/ComingSoon">
+    
           <Card1 />
-        </Link>
+    
 
-        <Link to="/ComingSoon">
+       
           <Card2 />
-        </Link>
+      
 
-        <Link to="/ComingSoon">
+        
           <Card3 />
-        </Link>
+        
 
-        <Link to="/ComingSoon">
+     
           <Card4 />
-        </Link>
+  
         </div>
 
         {/* Mobile Button */}
