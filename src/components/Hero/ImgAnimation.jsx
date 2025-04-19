@@ -29,7 +29,7 @@ const ImgAnimation = () => {
             ${isLoaded ? 'scale-100 opacity-100' : 'scale-95 opacity-0'}
             hover:scale-105 transition-transform duration-700
             animate-float`}
-          src="src/assets/Hero Image.svg"
+          src="Hero Image.svg"
           alt="Hero"
           onLoad={() => setIsLoaded(true)}
         />
